@@ -11,8 +11,16 @@
 
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int connect_server(const char* server_ip) {
+  if (server_ip == NULL) {
+    return -1;
+  }
+  return 0;
+}
+
+int main(int argc, char* argv[]) {
   printf("hello from jacky\n");
+  connect_server("10.1.1.1");
   return 0;
 }
 
